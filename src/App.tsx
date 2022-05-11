@@ -17,7 +17,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Catalog />} />
       <Route path="/admin" element={<Admin />} />
-      <Route path="/docs/devdocs-registering" element={<DeveloperDocs />} />
+      <Route path="/developer-docs" element={<DeveloperDocs />} />
       <Route path="/about" element={<About />} />
     </Routes>
   </BrowserRouter>
