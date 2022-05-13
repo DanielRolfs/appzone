@@ -3,15 +3,15 @@ import 'react-app-polyfill/ie9'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
+
 import { initReactI18next } from 'react-i18next'
 import i18next from 'i18next'
 import { is_browser_supported } from './utils/browser'
 import langEN from './lang/en.json'
 
 import App from './App'
-import { store } from './redux/store'
-
+import { store } from './store'
+import { Provider } from 'react-redux'
 
 const supportedEl = document.getElementById('app')
 const unsupportedEl = document.getElementById('browserError')
