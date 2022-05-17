@@ -1,5 +1,4 @@
 import React from 'react';
-import MainTabBar from '../components/MainTabBar'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
@@ -46,7 +45,6 @@ function DeveloperDocs() {
 
     return (
         <div className="DeveloperDocs">
-            <MainTabBar />
             DeveloperDocs
 
             <Box

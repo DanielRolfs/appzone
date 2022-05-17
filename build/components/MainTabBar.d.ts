@@ -1,3 +1,2 @@
 /// <reference types="react" />
-declare function MainTabBar(): JSX.Element;
-export default MainTabBar;
+export default function MainTabBar(): JSX.Element;
