@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
+/* import Typography from '@mui/material/Typography'; */
 import {
   MemoryRouter,
   Route,
@@ -88,7 +88,7 @@ function MenuBar() {
    );
 }
 
-function CurrentRoute() {
+/* function CurrentRoute() {
   const location = useLocation();
 
   return (
@@ -96,7 +96,7 @@ function CurrentRoute() {
       Current route: {location.pathname}
     </Typography>
   );
-}
+} */
 
 
 
