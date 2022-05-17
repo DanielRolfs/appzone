@@ -1,3 +1,2 @@
 /// <reference types="react" />
-declare function Admin(): JSX.Element;
-export default Admin;
+export default function Admin(): JSX.Element;
