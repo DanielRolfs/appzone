@@ -28,7 +28,7 @@ function Catalog() {
                     <CheckBoxSearchFunctions></CheckBoxSearchFunctions>
                 </div>
             </div>
-            <div style={{ display: "flex", flexWrap: "wrap", margin: "10px" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", margin: "54px", gap: "54px" }}>
                 <div>
                     <AppCard></AppCard>
                 </div>
