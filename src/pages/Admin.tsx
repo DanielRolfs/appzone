@@ -8,6 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import AdminSidebar from '../components/AdminSidebar';
+/* import { useNavigate } from "react-router-dom" */
 
 interface Column {
     id: 'name' | 'preview' | 'production' | 'appowner' | 'placeholder';
@@ -78,6 +79,12 @@ const rows = [
 
 ];
 
+/* function NavigateToDetailView(
+    const navigate = useNavigate()
+
+    navigate('/appdetailview')
+) */
+
 
 export default function Admin() {
     const [page, setPage] = React.useState(0);
@@ -91,6 +98,8 @@ export default function Admin() {
         setRowsPerPage(+event.target.value);
         setPage(0);
     };
+
+    
 
     return (
         <>
@@ -125,19 +134,24 @@ export default function Admin() {
                                     {rows
                                         .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                                         .map((row) => {
+
                                             return (
-                                                <TableRow hover role="checkbox" tabIndex={-1} key={row.preview}>
-                                                    {columns.map((column) => {
-                                                        const value = row[column.id];
-                                                        return (
-                                                            <TableCell key={column.id} align={column.align}>
-                                                                {column.format && typeof value === 'number'
-                                                                    ? column.format(value)
-                                                                    : value}
-                                                            </TableCell>
-                                                        );
-                                                    })}
-                                                </TableRow>
+                                              
+                                                <TableRow hover role="checkbox" tabIndex={-1} key={row.preview} /* onclick={NavigateToDetailView() }*/>
+                                                    {/*  */}
+                                                        {columns.map((column) => {
+                                                            const value = row[column.id];
+                                                            return (
+                                                                <TableCell key={column.id} align={column.align}>
+                                                                    {column.format && typeof value === 'number'
+                                                                        ? column.format(value)
+                                                                        : value}
+                                                                </TableCell>
+                                                            );
+                                                        })}
+                                                   {/*   */}
+                                                    </TableRow>
+            
                                             );
                                         })}
                                 </TableBody>

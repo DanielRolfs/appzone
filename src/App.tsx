@@ -19,6 +19,7 @@ import Catalog from './pages/Catalog'
 import About from './pages/About'
 import Admin from './pages/Admin'
 import DeveloperDocs from './pages/DeveloperDocs'
+import AppDetailView from './components/AppDetailView';
 
 
 function Router(props: { children?: React.ReactNode }) {
@@ -114,6 +115,7 @@ function App() {
             <Route path="/admin" element={<Admin />} />
             <Route path="/developer-docs" element={<DeveloperDocs />} />
             <Route path="/about" element={<About />} />
+            <Route path="/appdetailview" element={<AppDetailView />} />
           </Routes>
         </Box>
       </Router>

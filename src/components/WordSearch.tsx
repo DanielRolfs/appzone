@@ -15,11 +15,11 @@ const Root = styled('div')(
 `,
 );
 
-const Label = styled('label')`
+/* const Label = styled('label')`
   padding: 0 0 4px;
   line-height: 1.5;
   display: block;
-`;
+`; */
 
 const InputWrapper = styled('div')(
     ({ theme }) => `
@@ -156,7 +156,7 @@ const Listbox = styled('ul')(
 export default function WordSearch() {
     const {
         getRootProps,
-        getInputLabelProps,
+        /* getInputLabelProps, */
         getInputProps,
         getTagProps,
         getListboxProps,
