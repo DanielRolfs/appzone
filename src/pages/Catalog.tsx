@@ -1,4 +1,8 @@
 import React from 'react';
+import AppCard from '../components/AppCard';
+import CheckBoxSearchFunctions from '../components/CheckBoxSearchFunctions';
+import CheckBoxSearchUsecases from '../components/CheckBoxSearchUsecases';
+import WordSearch from '../components/WordSearch';
 
 function Catalog() {
     return (
@@ -11,7 +15,38 @@ function Catalog() {
                     the Digital Transformation App Store
                 </div>
                 
-                <div></div>
+                
+            </div>
+            <div style={{ display: "flex", flexDirection: "row"}}>
+                <div>
+                    <WordSearch></WordSearch>
+                </div>
+                <div>
+                    <CheckBoxSearchUsecases></CheckBoxSearchUsecases>
+                </div>
+                <div>
+                    <CheckBoxSearchFunctions></CheckBoxSearchFunctions>
+                </div>
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap", margin: "10px" }}>
+                <div>
+                    <AppCard></AppCard>
+                </div>
+                <div>
+                    <AppCard></AppCard>
+                </div>
+                <div>
+                    <AppCard></AppCard>
+                </div>
+                <div>
+                    <AppCard></AppCard>
+                </div>
+                <div>
+                    <AppCard></AppCard>
+                </div>
+                <div>
+                    <AppCard></AppCard>
+                </div>
             </div>
         </div>
     );
