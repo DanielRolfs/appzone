@@ -11,21 +11,35 @@ const AppBase = () => {
     const {uid} = useParams()
 
     return (
-        <div>
-            <List component="nav" aria-label="main">
-                <ListItem button
-                    component={RouterLink}
-                    to={`/admin/apps/${uid}/screenshots`}
-                    title="Screenshots"
-                    selected={location.pathname === '/' || location.pathname.indexOf('screenshots') >= 0}>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+            <div>
+                <List component="nav" aria-label="main">
+                    <ListItem button
+                        component={RouterLink}
+                        to={`/admin/apps/${uid}`}
+                        title="App Detail"
+                        selected={location.pathname === '/' || location.pathname.indexOf('/') >= 0}>
+                            <ListItemIcon>
+                                <ImageIcon />
+                            </ListItemIcon>
+                        <ListItemText primary="App Detail" />
+                    </ListItem>
+                    
+                    <ListItem button
+                        component={RouterLink}
+                        to={`/admin/apps/${uid}/screenshots`}
+                        title="Screenshots"
+                        selected={location.pathname === '/' || location.pathname.indexOf('screenshots') >= 0}>
                         <ListItemIcon>
                             <ImageIcon />
                         </ListItemIcon>
-                    <ListItemText primary="Screenshots" />
-                </ListItem>
-            </List>
-
-            <Outlet />
+                        <ListItemText primary="Screenshots" />
+                    </ListItem>
+                </List>
+            </div>
+            <div>
+                <Outlet />
+            </div>
         </div>
     )
 }
