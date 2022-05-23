@@ -1,2 +1,2 @@
-/// <reference types="react" />
-export default function Admin(): JSX.Element;
+declare const Admin: () => JSX.Element;
+export default Admin;
