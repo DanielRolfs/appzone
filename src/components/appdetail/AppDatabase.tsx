@@ -5,7 +5,7 @@ import Container from '@mui/material/Container'
 
 
 
-const AppContactsAndLinks = () => {
+const AppDatabase = () => {
     const { uid } = useParams()
 
     // TODO fetch app from redux toolkit using uid
@@ -14,10 +14,10 @@ const AppContactsAndLinks = () => {
     return (
         <Container maxWidth='xl' fixed>
             <Typography variant='h1' mb={6}>
-                AppContactsAndLinks {uid}
+                AppDatabase {uid}
             </Typography>
         </Container>
     )
 }
 
-export default AppContactsAndLinks
+export default AppDatabase

@@ -21,6 +21,14 @@ import AppScreenshots from './components/appdetail/AppScreenshots';
 import AdminDashboard from './components/AdminDashboard';
 import AppContactsAndLinks from './components/appdetail/AppContactsAndLinks';
 import AppTeamMembers from './components/appdetail/AppTeamMembers';
+import AppNotifications from './components/appdetail/AppNotifications';
+import AppDatabase from './components/appdetail/AppDatabase';
+import AppFileStorage from './components/appdetail/AppFileStorage';
+import AppReleases from './components/appdetail/AppReleases';
+import AppApiAccess from './components/appdetail/AppApiAccess';
+import AppMonitoring from './components/appdetail/AppMonitoring';
+import AppLogging from './components/appdetail/AppLogging';
+import AppDependencies from './components/appdetail/AppDependencies';
 
 
 function MyTabs() {
@@ -84,6 +92,14 @@ const App = () => {
                 <Route path="screenshots" element={<AppScreenshots />} />
                 <Route path="contacts" element={<AppContactsAndLinks />} />
                 <Route path="team" element={<AppTeamMembers />} />
+                <Route path="notifications" element={<AppNotifications />} />
+                <Route path="database" element={<AppDatabase />} />
+                <Route path="filestorage" element={<AppFileStorage />} />
+                <Route path="releases" element={<AppReleases />} />
+                <Route path="api-access" element={<AppApiAccess />} />
+                <Route path="monitoring" element={<AppMonitoring />} />
+                <Route path="logging" element={<AppLogging />} />
+                <Route path="dependencies" element={<AppDependencies />} />
               </Route>
             </Route>
             <Route path="/developer-docs" element={<DeveloperDocs />} />

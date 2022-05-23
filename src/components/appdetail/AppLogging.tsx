@@ -5,7 +5,7 @@ import Container from '@mui/material/Container'
 
 
 
-const AppContactsAndLinks = () => {
+const AppLogging = () => {
     const { uid } = useParams()
 
     // TODO fetch app from redux toolkit using uid
@@ -14,10 +14,10 @@ const AppContactsAndLinks = () => {
     return (
         <Container maxWidth='xl' fixed>
             <Typography variant='h1' mb={6}>
-                AppContactsAndLinks {uid}
+                AppLogging {uid}
             </Typography>
         </Container>
     )
 }
 
-export default AppContactsAndLinks
+export default AppLogging

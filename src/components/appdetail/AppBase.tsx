@@ -70,6 +70,94 @@ const AppBase = () => {
                             <ListItemText primary="Team Members" />
                         </ListItem>
 
+                        <ListItem button
+                            component={RouterLink}
+                            to={`/admin/apps/${uid}/notifications`}
+                            title="Notifications"
+                            selected={location.pathname === '/' || location.pathname.indexOf('notifications') >= 0}>
+                            <ListItemIcon>
+                                <ImageIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Notifications" />
+                        </ListItem>
+                        
+                        <ListItem button
+                            component={RouterLink}
+                            to={`/admin/apps/${uid}/database`}
+                            title="Database"
+                            selected={location.pathname === '/' || location.pathname.indexOf('database') >= 0}>
+                            <ListItemIcon>
+                                <ImageIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Database" />
+                        </ListItem>
+
+                        <ListItem button
+                            component={RouterLink}
+                            to={`/admin/apps/${uid}/filestorage`}
+                            title="File Storage"
+                            selected={location.pathname === '/' || location.pathname.indexOf('filestorage') >= 0}>
+                            <ListItemIcon>
+                                <ImageIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="File Storage" />
+                        </ListItem>
+
+                        <ListItem button
+                            component={RouterLink}
+                            to={`/admin/apps/${uid}/releases`}
+                            title="Releases"
+                            selected={location.pathname === '/' || location.pathname.indexOf('releases') >= 0}>
+                            <ListItemIcon>
+                                <ImageIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Releases" />
+                        </ListItem>
+
+                        <ListItem button
+                            component={RouterLink}
+                            to={`/admin/apps/${uid}/api-access`}
+                            title="API Access"
+                            selected={location.pathname === '/' || location.pathname.indexOf('api-access') >= 0}>
+                            <ListItemIcon>
+                                <ImageIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="API Access" />
+                        </ListItem>
+
+                        <ListItem button
+                            component={RouterLink}
+                            to={`/admin/apps/${uid}/monitoring`}
+                            title="Monitoring"
+                            selected={location.pathname === '/' || location.pathname.indexOf('monitoring') >= 0}>
+                            <ListItemIcon>
+                                <ImageIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Monitoring" />
+                        </ListItem>
+
+                        <ListItem button
+                            component={RouterLink}
+                            to={`/admin/apps/${uid}/logging`}
+                            title="Logging"
+                            selected={location.pathname === '/' || location.pathname.indexOf('logging') >= 0}>
+                            <ListItemIcon>
+                                <ImageIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Logging" />
+                        </ListItem>
+
+                        <ListItem button
+                            component={RouterLink}
+                            to={`/admin/apps/${uid}/dependencies`}
+                            title="Dependencies"
+                            selected={location.pathname === '/' || location.pathname.indexOf('dependencies') >= 0}>
+                            <ListItemIcon>
+                                <ImageIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Dependencies" />
+                        </ListItem>
+
                     </List>
                 </div>
                 <div>
