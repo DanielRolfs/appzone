@@ -5,22 +5,36 @@ import ListItem from '@mui/material/ListItem'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import ImageIcon from '@mui/icons-material/Image';
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import { useNavigate } from "react-router-dom";
 
-// TODO this is the component that renders the toolbar and left sidebar for the app detail view
 const AppBase = () => {
+    const navigate = useNavigate()
+
     const {uid} = useParams()
     const { t } = useTranslation()
 
+
+    const navigateToAdmin = () => {
+        navigate(`/admin`)
+    }
+
     return (
         <div>
-            <div>
-                black bar
-                <Typography mt={2}>
-                    <Link component={RouterLink} to='/admin'>{t('common.links.backTo', { context: 'assessments' })}</Link>
-                </Typography>
+            <div style={{ backgroundColor: "black", color: "white", height: "100px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "21px"}}>
+                    <div><ArrowBackIosNewIcon onClick={() => navigateToAdmin()}></ArrowBackIosNewIcon></div>
+                    <div>img</div>
+                    <div>
+                         <div>Book my Desk</div>
+                         <div>Managed App</div>
+                    </div>
+                </div>
+                <div style={{ display: "flex", flexDirection: "row", gap: "21px" }}>
+                    <div>New Realese</div>
+                    <div>Open ...</div>
+                </div>
             </div>
 
             <div style={{ display: "flex", flexDirection: "row" }}>
