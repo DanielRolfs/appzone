@@ -5,19 +5,19 @@ import Container from '@mui/material/Container'
 
 
 
-const AppScreenshots = () => {
+const AppTeamMembers = () => {
     const { uid } = useParams()
 
     // TODO fetch app from redux toolkit using uid
-    // const { data: app, isLoading } = useAppScreenshotsQuery(uid)  // EXAMPLE!
+    // const { data: app, isLoading } = useAppTeamMembersQuery(uid)  // EXAMPLE!
 
     return (
         <Container maxWidth='xl' fixed>
             <Typography variant='h1' mb={6}>
-                AppScreenshots {uid}
+                AppTeamMembers {uid}
             </Typography>
         </Container>
     )
 }
 
-export default AppScreenshots
+export default AppTeamMembers

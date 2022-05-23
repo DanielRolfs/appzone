@@ -19,6 +19,8 @@ import AppBase from './components/appdetail/AppBase';
 import AppDetail from './components/appdetail/AppDetail';
 import AppScreenshots from './components/appdetail/AppScreenshots';
 import AdminDashboard from './components/AdminDashboard';
+import AppContactsAndLinks from './components/appdetail/AppContactsAndLinks';
+import AppTeamMembers from './components/appdetail/AppTeamMembers';
 
 
 function MyTabs() {
@@ -80,6 +82,8 @@ const App = () => {
               <Route path="apps/:uid" element={<AppBase />}>
                 <Route index element={<AppDetail />} />
                 <Route path="screenshots" element={<AppScreenshots />} />
+                <Route path="contacts" element={<AppContactsAndLinks />} />
+                <Route path="team" element={<AppTeamMembers />} />
               </Route>
             </Route>
             <Route path="/developer-docs" element={<DeveloperDocs />} />
